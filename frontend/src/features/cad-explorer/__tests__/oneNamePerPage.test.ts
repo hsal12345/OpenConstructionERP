@@ -263,7 +263,7 @@ describe('the route title and the title map move together (#149)', () => {
     headerSource.indexOf('export function resolvePageTitleKey'),
   );
   const titleMap = new Map(
-    [...mapBlock.matchAll(/^\s*'([^']+)':\s*'([^']+)',/gm)].map((m) => [m[1], m[2]]),
+    [...mapBlock.matchAll(/^\s*'([^']+)':\s*'([^']+)',/gm)].map((m) => [m[1]!, m[2]!]),
   );
 
   it('finds the route title and a populated map', () => {

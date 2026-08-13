@@ -102,6 +102,7 @@ services:
       APP_ENV: development
       APP_DEBUG: "false"
       VECTOR_BACKEND: lancedb
+      OE_REGISTRATION_MODE: "${OE_REGISTRATION_MODE:-closed}"
     volumes:
       - app_data:/data
     healthcheck:
